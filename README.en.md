@@ -1,5 +1,9 @@
 # Curriculum Bridge Atlas
 
+## [Open the interactive website →](https://maxliu1979.github.io/Curriculum-Bridge-Atlas/)
+
+Choose a subject, select a concept, read its correspondence table, and preview teaching cards. The GitHub `index.html` file view displays source code; use the website link above for the working interface.
+
 **A CIE curriculum bridge reference, initiated and curated by Max Liu.**
 
 [Open the website](https://maxliu1979.github.io/Curriculum-Bridge-Atlas/) · [Email Max Liu](mailto:max_liu1979@outlook.com) · [Join the discussion](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/discussions) · [中文](README.md)

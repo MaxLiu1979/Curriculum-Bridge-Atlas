@@ -12,7 +12,7 @@ const om=new Map(D.occurrences.map(o=>[o.id,o]));
 const sm=new Map(D.sources.map(s=>[s.id,s]));
 const rm=new Map(D.cards.map(r=>[r.id,r]));
 let selected=cm.has('BIO12')?'BIO12':D.concepts[0].id;
-let tab='timeline',filtered=[];
+let tab='table',filtered=[];
 
 function openPreview(title,body){
   $('evidenceTitle').textContent=title;
@@ -78,6 +78,11 @@ function timeline(os){
   }).join('');
 }
 
+function correspondence(c,os){
+  const rows=D.stages.flatMap(stage=>os.filter(o=>o.stage===stage));
+  return '<p class="preview-help">点选表中的课程位置或来源，可以直接在网页内展开详情。</p><div class="table-scroll comparison-wrap"><table class="comparison-table" data-cie-table><caption>'+E(c.title_zh)+' · 衔接对照表</caption><thead><tr><th scope="col">课程阶段</th><th scope="col">课程位置 · 点开预览</th><th scope="col">要求与深度</th><th scope="col">衔接关系与补桥</th><th scope="col">来源 · 点开预览</th></tr></thead><tbody>'+rows.map(o=>'<tr class="'+(o.stage.startsWith('CIE')?'cie-row':'')+'"><td><strong>'+E(o.stage)+'</strong></td><td><button class="inline-link" data-occ="'+E(o.id)+'">'+E(o.position_label)+'</button><p class="muted">'+E(o.code)+'</p></td><td>'+B(o.depth_summary)+'</td><td><span class="chip">'+E(relationLabel(o))+'</span>'+B(o.gap)+'</td><td><button class="inline-link" data-source="'+E(o.source_id)+'">来源与页码</button><p class="muted">PDF '+E(T(o.pdf_pages))+'</p></td></tr>').join('')+'</tbody></table></div>';
+}
+
 function graph(c,os){
   const stages=D.stages.filter(s=>os.some(o=>o.stage===s));
   const width=Math.max(800,stages.length*260),mid=width/2;
@@ -125,7 +130,7 @@ function evidence(os){
 
 function conceptPreview(c){
   const os=stageData(c);
-  return '<p class="en">'+E(c.title_en)+'</p>'+B(c.definition)+'<p class="muted">别名：'+E(c.aliases.join(' · '))+'</p><div class="callout">'+E(c.relation_warning)+'</div>'+timeline(os);
+  return '<p class="en">'+E(c.title_en)+'</p>'+B(c.definition)+'<p class="muted">别名：'+E(c.aliases.join(' · '))+'</p><div class="callout">'+E(c.relation_warning)+'</div>'+correspondence(c,os);
 }
 
 function render(){
@@ -136,7 +141,7 @@ function render(){
   const os=stageData(c),verified=verifiedEvidence(os);
   const systematic=verified.find(o=>/系统|正式定义|运算方法|机制与|定量|方法选择|数系|技能/.test(o.depth_band));
   const summaries=summaryEvidence(verified[0],'所查版本中较早的正文线索','early')+summaryEvidence(systematic,'系统讲解 / 方法入口线索','systematic');
-  $('main').innerHTML='<div class="toolbar-line"><div><div class="chips"><span class="chip">'+E(c.id)+'</span><span class="chip">'+E(c.subjects.join(' / '))+'</span></div><h2>'+E(c.title_zh)+'</h2><div class="en">'+E(c.title_en)+'</div></div><button class="btn" data-preview-concept="'+E(c.id)+'">概念卡片预览</button></div><div class="definition">'+E(c.definition)+'</div><p class="muted">别名：'+E(c.aliases.join(' · '))+'</p>'+(/速度/.test($('search').value)?'<div class="disambiguation">请区分速率 speed（路程 / 时间）与矢量速度 velocity（位移变化率），以具体原文定义为准。</div>':'')+'<div class="summary-grid">'+summaries+'<div class="summary-box" data-summary="coverage"><div class="label">当前可查范围</div><strong>'+os.length+' 条课程位置 / 线索</strong><small>CIE 要求与国内先修位置分别查看；课程位置不代表实际授课或学生掌握。</small></div></div>'+(verified[0]?'<div class="callout">'+E(D.evidence_rules.first_seen)+'</div>':'')+'<nav class="tabs" aria-label="知识点视图">'+[['timeline','分阶段查看'],['graph','知识点关系图'],['resources','教学卡预览'],['evidence','来源与证据口径']].filter(([id])=>id!=='resources'||hasResources).map(([id,label])=>'<button data-tab="'+id+'" class="'+(tab===id?'active':'')+'" aria-pressed="'+(tab===id)+'">'+label+'</button>').join('')+'</nav><div id="tabbody">'+(tab==='timeline'?timeline(os):tab==='graph'?graph(c,os):tab==='resources'?resources(c):evidence(os))+'</div><div class="site-footer">'+E(D.release)+' · 资料快照 '+E(D.created)+' · Max Liu<br>原创注释与练习：CC BY 4.0；软件：MIT。独立教研整理，非 CIE 官方对照。</div>';
+  $('main').innerHTML='<div class="toolbar-line"><div><div class="chips"><span class="chip">'+E(c.id)+'</span><span class="chip">'+E(c.subjects.join(' / '))+'</span></div><h2>'+E(c.title_zh)+'</h2><div class="en">'+E(c.title_en)+'</div></div><button class="btn" data-preview-concept="'+E(c.id)+'">打开完整对应表</button></div><div class="definition">'+E(c.definition)+'</div><p class="muted">别名：'+E(c.aliases.join(' · '))+'</p>'+(/速度/.test($('search').value)?'<div class="disambiguation">请区分速率 speed（路程 / 时间）与矢量速度 velocity（位移变化率），以具体原文定义为准。</div>':'')+'<div class="summary-grid">'+summaries+'<div class="summary-box" data-summary="coverage"><div class="label">当前可查范围</div><strong>'+os.length+' 条课程位置 / 线索</strong><small>CIE 要求与国内先修位置分别查看；课程位置不代表实际授课或学生掌握。</small></div></div>'+(verified[0]?'<div class="callout">'+E(D.evidence_rules.first_seen)+'</div>':'')+'<nav class="tabs" aria-label="知识点视图">'+[['table','衔接对照表'],['timeline','分阶段详解'],['graph','知识点关系图'],['resources','教学卡预览'],['evidence','来源与证据口径']].filter(([id])=>id!=='resources'||hasResources).map(([id,label])=>'<button data-tab="'+id+'" class="'+(tab===id?'active':'')+'" aria-pressed="'+(tab===id)+'">'+label+'</button>').join('')+'</nav><div id="tabbody">'+(tab==='table'?correspondence(c,os):tab==='timeline'?timeline(os):tab==='graph'?graph(c,os):tab==='resources'?resources(c):evidence(os))+'</div><div class="site-footer">'+E(D.release)+' · 资料快照 '+E(D.created)+' · Max Liu<br>原创注释与练习：CC BY 4.0；软件：MIT。独立教研整理，非 CIE 官方对照。</div>';
   try{history.replaceState(null,'','#'+encodeURIComponent(c.id))}catch{}
 }
 

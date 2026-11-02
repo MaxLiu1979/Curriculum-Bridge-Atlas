@@ -77,7 +77,7 @@ def main():
     rules["public_access"] = "本项目以网页呈现 CIE 知识点、国内先修位置、原创教学卡与来源说明。"
     rules["validation"] = "结构验证与界面检查不能证明课程等价、学生掌握或课堂效果。证据状态沿用2026-10-25资料快照，本次发布没有重核全部原件。"
     data = {"schema_version": "2.0-web", "created": source["created"], "published": "2026-11-02",
-            "title": "Curriculum Bridge Atlas", "release": "v1.1.0", "subjects": source["subjects"],
+            "title": "Curriculum Bridge Atlas", "release": "v1.1.1", "subjects": source["subjects"],
             "stages": STAGES, "concepts": concepts, "occurrences": occurrences, "sources": sources,
             "cards": cards, "evidence_rules": rules,
             "counts": {"concepts": len(concepts), "occurrences": len(occurrences), "sources": len(sources), "cards": len(cards)}}
