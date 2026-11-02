@@ -90,7 +90,7 @@ def main():
     rules["validation"] = "结构验证与界面测试不能证明课程等价、学生掌握或课堂效果。证据状态沿用2026-10-25资料快照，本次发布没有重核全部原件。"
     data = {
         "schema_version": "1.0-public", "created": source["created"],
-        "published": "2026-11-02", "title": "课程衔接知识图谱", "release": "v1.0.0",
+        "published": "2026-11-02", "title": "Curriculum Bridge Atlas", "release": "v1.0.1",
         "subjects": source["subjects"], "stages": source["stages"],
         "concepts": concepts, "occurrences": occurrences, "sources": sources, "cards": cards,
         "evidence_rules": rules,

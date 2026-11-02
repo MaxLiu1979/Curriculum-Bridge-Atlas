@@ -2,8 +2,8 @@
   "schema_version": "1.0-public",
   "created": "2026-10-25",
   "published": "2026-11-02",
-  "title": "课程衔接知识图谱",
-  "release": "v1.0.0",
+  "title": "Curriculum Bridge Atlas",
+  "release": "v1.0.1",
   "subjects": [
     "经济",
     "会计",

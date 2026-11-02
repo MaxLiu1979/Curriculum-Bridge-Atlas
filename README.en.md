@@ -4,7 +4,7 @@
 
 A Chinese-first, bilingual reference for subject teachers and curriculum coordinators: **178 concepts / topic groups, 1,565 curriculum locations, 123 bibliographic records, 76 original teaching cards, and a graph of 1,950 nodes / 4,082 directed edges**.
 
-[Open the viewer](https://maxliu1979.github.io/curriculum-bridge-knowledge-graph/) · [Download an offline release](https://github.com/MaxLiu1979/curriculum-bridge-knowledge-graph/releases/latest) · [中文说明](README.md)
+[Open the viewer](https://maxliu1979.github.io/Curriculum-Bridge-Atlas/) · [Download an offline release](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/releases/latest) · [中文说明](README.md)
 
 ![Viewer preview](docs/preview.png)
 

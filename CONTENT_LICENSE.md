@@ -2,7 +2,7 @@
 
 本项目自行编写的概念释义、课程衔接注释、教学建议、原创练习及相应数据和笔记，采用 [Creative Commons Attribution 4.0 International（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/) 许可。允许分享和改编，包括商业使用；须注明来源、链接许可并标明修改。
 
-建议署名：**Max Liu，课程衔接知识图谱，v1.0.0，2026**，并链接到本仓库。
+建议署名：**Max Liu，Curriculum Bridge Atlas，2026**，并链接到本仓库。
 
 第三方教材、大纲、模块规范、课程名称、商标和被引用的事实性书目信息不因本声明而改变权属。项目不提供这些原件，也不代表 Cambridge、Pearson Edexcel、AQA、OxfordAQA、NCUK 或相关出版社的授权、认证或背书。课程名称仅用于识别所对照的课程。
 

@@ -1,10 +1,12 @@
-# 课程衔接知识图谱 · Curriculum Bridge Atlas
+# Curriculum Bridge Atlas
+
+课程衔接知识图谱
 
 **同一个知识点，在国内初高中、CIE、A-Level 与 NCUK 中，分别讲到什么程度？转入后还需要补什么？**
 
 这是面向学科教师和课程协调者的中英双语课程衔接资料库。用知识点组织教材位置、课程要求、证据状态和补桥练习，帮助备课时找到可核查的对照入口。
 
-**[在线使用 →](https://maxliu1979.github.io/curriculum-bridge-knowledge-graph/)** · **[下载离线包 →](https://github.com/MaxLiu1979/curriculum-bridge-knowledge-graph/releases/latest)** · [English](README.en.md) · [报告问题](https://github.com/MaxLiu1979/curriculum-bridge-knowledge-graph/issues)
+**[在线使用 →](https://maxliu1979.github.io/Curriculum-Bridge-Atlas/)** · **[下载离线包 →](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/releases/latest)** · [English](README.en.md) · [报告问题](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/issues)
 
 ![知识点检索与阶段比较界面](docs/preview.png)
 
@@ -33,7 +35,7 @@
 ## 立即开始
 
 1. **在线查看**：打开上方“在线使用”，输入中英文知识点，切换学科和视图。
-2. **离线查看**：下载 Release 中的 `curriculum-bridge-atlas-v1.0.0.zip` 并解压，双击根目录 `index.html`。保留同目录的 `web/`。查看器无外部脚本依赖。
+2. **离线查看**：下载 Release 中的 `curriculum-bridge-atlas-v1.0.1.zip` 并解压，双击根目录 `index.html`。保留同目录的 `web/`。查看器无外部脚本依赖。
 3. **Obsidian**：将解压后的 `vault/` 作为已有库打开，进入 `Home.md`，或打开学科 Canvas。也可用普通文本编辑器阅读全部 Markdown。
 4. **开发者**：读取 `data/atlas.json` 或 `exports/graph.json`；图数据保留稳定 ID、关系类型与证据状态。
 
@@ -80,7 +82,7 @@ node --check web/app.js
 
 ## 一起完善
 
-欢迎通过 [Issue](https://github.com/MaxLiu1979/curriculum-bridge-knowledge-graph/issues) 或 Pull Request 补充版本、修正页码、提出教学建议。请提供概念 ID、具体课程代码、年份 / 版本及可公开的定位依据；标清“原文要求”和“个人教研判断”。请勿提交教材整本、受限模块文件、学生姓名、成绩或课堂原始记录。详见 [贡献说明](CONTRIBUTING.md)。
+欢迎通过 [Issue](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/issues) 或 Pull Request 补充版本、修正页码、提出教学建议。请提供概念 ID、具体课程代码、年份 / 版本及可公开的定位依据；标清“原文要求”和“个人教研判断”。请勿提交教材整本、受限模块文件、学生姓名、成绩或课堂原始记录。详见 [贡献说明](CONTRIBUTING.md)。
 
 本项目由 **Max Liu** 整理发布，AI 辅助形成初始资料与工具。它是独立教研项目，不代表 Cambridge、Pearson Edexcel、AQA、OxfordAQA、NCUK 或出版社的认证与背书。
 

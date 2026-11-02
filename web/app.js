@@ -42,7 +42,7 @@ function render(){
   try{history.replaceState(null,'','#'+encodeURIComponent(c.id))}catch{}
 }
 
-function noteLink(note){return 'https://github.com/MaxLiu1979/curriculum-bridge-knowledge-graph/blob/main/'+note.split('/').map(encodeURIComponent).join('/')}
+function noteLink(note){return 'https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/blob/main/'+note.split('/').map(encodeURIComponent).join('/')}
 function source(o){
   const s=sm.get(o.source_id);
   if(!s)return '<span class="muted">原件定位待补；仅作为教研线索</span>';

@@ -99,7 +99,7 @@ def main():
         ids = {c["id"] for c in concepts}
         edges = [{"id": e["id"], "fromNode": e["source"], "toNode": e["target"], "label": "先修建议"} for e in graph["edges"] if e["relation"] == "requires" and e["source"] in ids and e["target"] in ids]
         write(f"vault/{subject}知识网络.canvas", json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False, indent=2) + "\n")
-    write("vault/Home.md", "# 课程衔接知识图谱\n\n资料快照：2026-10-25；公开版：2026-11-02。\n\n" + "\n".join(f"- [[subjects/{s}|{s}]]" for s in data["subjects"]) + "\n\n## 使用口径\n\n" + "\n\n".join(data["evidence_rules"].values()) + "\n\n完整交互检索请打开仓库根目录的 index.html。\n")
+    write("vault/Home.md", "# Curriculum Bridge Atlas\n\n课程衔接知识图谱\n\n资料快照：2026-10-25；公开版：2026-11-02。\n\n" + "\n".join(f"- [[subjects/{s}|{s}]]" for s in data["subjects"]) + "\n\n## 使用口径\n\n" + "\n\n".join(data["evidence_rules"].values()) + "\n\n完整交互检索请打开仓库根目录的 index.html。\n")
     csv_export("exports/nodes.csv", graph["nodes"])
     csv_export("exports/edges.csv", graph["edges"])
     csv_export("exports/sources.csv", data["sources"])
