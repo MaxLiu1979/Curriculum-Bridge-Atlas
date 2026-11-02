@@ -1,41 +1,37 @@
 # Curriculum Bridge Atlas
 
-**Where does the same concept appear across Chinese secondary curricula, Cambridge IGCSE / AS & A Level and NCUK IFY, and what still needs bridging?**
+**A CIE curriculum bridge reference, initiated and curated by Max Liu.**
 
-A Chinese-first, bilingual reference for subject teachers and curriculum coordinators: **178 concepts / topic groups, 1,565 curriculum locations, 123 bibliographic records, 76 original teaching cards, and a graph of 1,950 nodes / 4,082 directed edges**.
+[Open the website](https://maxliu1979.github.io/Curriculum-Bridge-Atlas/) · [Email Max Liu](mailto:max_liu1979@outlook.com) · [Join the discussion](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/discussions) · [中文](README.md)
 
-[Open the viewer](https://maxliu1979.github.io/Curriculum-Bridge-Atlas/) · [Download an offline release](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/releases/latest) · [中文说明](README.md)
+## Meet the creator
 
-![Viewer preview](docs/preview.png)
+**Max Liu — high school principal and AI teacher**
 
-Subjects: economics, accounting, physics, chemistry, mathematics, further mathematics, biology and English. Selected teaching cards also discuss specific Pearson Edexcel, AQA and OxfordAQA course variants; these are not complete board-by-board mappings.
+Interested in curriculum bridging, AI applications for teachers and collaborative teaching resources. Educators and curriculum researchers are welcome to share ideas, report corrections and help improve the atlas.
 
-Search for `photosynthesis`, `quadratic equation`, `velocity`, `buffer`, `opportunity cost` or `matrix`. Compare stage-specific requirements, inspect source locators, explore a concept graph and choose original diagnostic or bridging activities. Teaching cards contain teacher answers.
+Contact: **[max_liu1979@outlook.com](mailto:max_liu1979@outlook.com)** · [GitHub profile](https://github.com/MaxLiu1979)
 
-## Use locally
+![CIE knowledge-point viewer](docs/preview.png)
 
-Download and extract the release ZIP, then open `index.html`. Keep `web/` beside it. The viewer has no third-party JavaScript dependencies, analytics, account or upload feature. External source links and GitHub-hosted notes require internet access.
+## Browse in the website
 
-Open `vault/` as an existing Obsidian vault, starting from `Home.md`, for offline Markdown notes and subject Canvas files. Developers can use `data/atlas.json`, `exports/graph.json` and the node / edge CSV exports.
+Search in Chinese or English, compare domestic secondary foundations with CIE IGCSE / AS & A Level / Further Mathematics, inspect relationship nodes and preview original teaching cards and source locators. All content is presented as web previews.
 
-Optional command-line tools require Python 3.10+, standard library only:
+The current scope contains **168 concepts / topic groups, 1,375 curriculum locations, 57 bibliographic records and 60 original teaching cards** across economics, accounting, physics, chemistry, mathematics, further mathematics, biology and English. Only concepts with a direct CIE curriculum location in the existing dataset are included.
+
+The source snapshot is **25 October 2026**; the website was updated on **2 November 2026**. Empty early-evidence summary panels are omitted. Missing evidence does not establish that a curriculum lacks the topic. Textbook positions, syllabus requirements, actual teaching and learner mastery are separate kinds of information. Prerequisite and bridging proposals are editorial teaching suggestions, not complete curriculum-equivalence findings.
+
+Teaching cards include teacher answers. Original source files and personal classroom records are not provided. Structural and interface checks do not establish classroom effectiveness or re-audit every original document. See [methodology](docs/METHODOLOGY.md) and [sources](docs/SOURCES.md).
+
+## Contribute or maintain
+
+Use the [discussion area](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/discussions) for ideas, or [Issues](https://github.com/MaxLiu1979/Curriculum-Bridge-Atlas/issues) for corrections with a concept ID, CIE course code, edition and publicly shareable locator. See [contribution guidance](CONTRIBUTING.md).
 
 ```bash
-python scripts/query.py "photosynthesis" --json
 python scripts/build.py
 python scripts/validate.py
+node --check web/viewer.js
 ```
 
-## Interpret with care
-
-The source snapshot is **25 October 2026**; the public edition was prepared on **2 November 2026**. The publication checks package structure and usability, not every curriculum claim anew.
-
-- Relationships may express partial overlap, prerequisites or teaching-resource support. They do not establish complete curriculum equivalence.
-- A textbook location, syllabus requirement or example teaching week does not establish actual teaching or learner mastery.
-- Sequence and bridging proposals are editorial teaching suggestions. The earliest located evidence is limited to the editions examined.
-- Third-party textbooks, syllabuses and restricted module documents are **not redistributed**. Bibliographic records, page locators and hashes help identify the relevant originals; official entry pages are not necessarily download links for those exact files.
-- No classroom effectiveness claim or official endorsement is made. The project was prepared with AI assistance.
-
-See [methodology](docs/METHODOLOGY.md), [sources](docs/SOURCES.md) and [contribution guidance](CONTRIBUTING.md). Please report errors with the concept ID, course code, edition and a publicly shareable locator; do not upload student information or restricted documents.
-
-Software: [MIT](LICENSE). Original annotations, exercises and corresponding data: [CC BY 4.0](CONTENT_LICENSE.md). Third-party rights are unaffected. Maintained by **Max Liu**.
+The website has no account, analytics or upload feature. Software: [MIT](LICENSE). Original annotations and exercises: [CC BY 4.0](CONTENT_LICENSE.md). Third-party rights are unaffected. This independent, AI-assisted project has no official endorsement from Cambridge or textbook publishers.

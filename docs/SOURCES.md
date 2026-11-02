@@ -1,23 +1,15 @@
 # 来源与公开范围
 
-公开数据保留 **123 条来源书目**，其中 Cambridge 16 条、Pearson Edexcel 17 条、AQA / OxfordAQA 26 条、NCUK 23 条、国内教材 41 条。完整索引见 [`exports/sources.csv`](../exports/sources.csv) 和 [`vault/sources/`](../vault/sources/)。
+网页包含 **57 条来源书目**：Cambridge 16 条、国内教材 41 条。它们表示所查版本的资料记录，不表示各份材料都已完整映射。
 
-这些数量表示资料快照中的原件记录，不代表每份材料都已完整逐条映射，也不代表记录中的年份适用于所有读者。
+在网页的“来源与证据口径”中点选来源，可以预览书名、版本说明、当前知识点的页码和证据状态。原件不在网页提供。PDF 页码是对应资料快照的物理页，不能直接套用到其他版次。
 
-## 获取与核对
+需要继续核对 CIE 课程时，可查 [Cambridge 官方课程目录](https://www.cambridgeinternational.org/programmes-and-qualifications/)。课程代码、考试年份、版本与更新需分别核对；入口页面不能替代特定原件。
 
-- [Cambridge 课程与资格入口](https://www.cambridgeinternational.org/programmes-and-qualifications/)及 [AS & A-Level 学科目录](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/subjects/)：核对课程代码、考试年份与大纲更新。
-- [Pearson Qualifications](https://qualifications.pearson.com/)：区分 International GCSE、International AS / A Level 等具体变体。
-- [AQA](https://www.aqa.org.uk/) 与 [OxfordAQA](https://www.oxfordaqa.com/)：两者课程和规范分别处理，不能只凭名称互认。
-- [NCUK IFY 项目入口](https://www.ncuk.ac.uk/ncuk-programmes/international-foundation-year/)：具体模块原件请向有权提供的课程中心获取。项目介绍不能替代特定学年模块规范。
-- [国家中小学智慧教育平台教材入口](https://basic.smartedu.cn/tchMaterial)：按出版社、学科、册次与版次核对。部分原资料来自第三方托管，因此保留旧版、印次缺失及来源可靠性注记；这里不再转发第三方教材文件或镜像地址。
+部分国内原资料来自第三方托管，因此保留旧版、印次缺失和来源可靠性注记。哈希用于识别内容一致性，不证明授权、现行版本或学校采用情况。
 
-官方入口用于进一步查找，不是所列 SHA-256 文件的替代证据。索引中既有官方文档链接也有仅列书目的记录；本次发布未逐一重验所有既有下载地址。哈希用于比对内容一致性，不证明出版方授权、现行版本或学校正在采用该版。
+网页保留稳定 ID、书名、课程代码、页码、版本说明、哈希和原创教学摘要，不提供第三方教材、大纲原件、扫描图、大段摘录、内部路径、学生或私人课堂记录。
 
-## 公开内容的处理
+页面中的 **Max Liu** 署名、职业介绍与 **max_liu1979@outlook.com** 联系邮箱由项目发起人授权公开，专用于交流与资源共建。
 
-保留稳定 ID、书名、课程代码、页码、版本说明、来源哈希、独立编写的概念释义 / 衔接摘要 / 练习，以及关系类型和证据状态。
-
-未分发第三方教材 PDF、大纲或内部模块原件、扫描图和大段正文摘录。公开包也不包含内部绝对路径、微信附件位置、Obsidian 使用历史、授课记录或人员 / 学生资料。来源书目中的 `.pdf` 是原件标题的一部分，不表示库内存在该 PDF。
-
-本项目原创建议与第三方原件分别适用各自权利范围，见 [内容许可](../CONTENT_LICENSE.md)。
+原创注释和第三方原件分别适用其权利范围，见 [内容许可](../CONTENT_LICENSE.md)。
