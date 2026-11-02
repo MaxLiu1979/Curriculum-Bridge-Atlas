@@ -1,0 +1,297 @@
+{
+  "nodes": [
+    {
+      "id": "ACC01",
+      "type": "file",
+      "file": "concepts/ACC01.md",
+      "x": 0,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC02",
+      "type": "file",
+      "file": "concepts/ACC02.md",
+      "x": 320,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC03",
+      "type": "file",
+      "file": "concepts/ACC03.md",
+      "x": 640,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC04",
+      "type": "file",
+      "file": "concepts/ACC04.md",
+      "x": 960,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC05",
+      "type": "file",
+      "file": "concepts/ACC05.md",
+      "x": 1280,
+      "y": 0,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC06",
+      "type": "file",
+      "file": "concepts/ACC06.md",
+      "x": 0,
+      "y": 150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC07",
+      "type": "file",
+      "file": "concepts/ACC07.md",
+      "x": 320,
+      "y": 150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC08",
+      "type": "file",
+      "file": "concepts/ACC08.md",
+      "x": 640,
+      "y": 150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC09",
+      "type": "file",
+      "file": "concepts/ACC09.md",
+      "x": 960,
+      "y": 150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC10",
+      "type": "file",
+      "file": "concepts/ACC10.md",
+      "x": 1280,
+      "y": 150,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC11",
+      "type": "file",
+      "file": "concepts/ACC11.md",
+      "x": 0,
+      "y": 300,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC12",
+      "type": "file",
+      "file": "concepts/ACC12.md",
+      "x": 320,
+      "y": 300,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC13",
+      "type": "file",
+      "file": "concepts/ACC13.md",
+      "x": 640,
+      "y": 300,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC14",
+      "type": "file",
+      "file": "concepts/ACC14.md",
+      "x": 960,
+      "y": 300,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC15",
+      "type": "file",
+      "file": "concepts/ACC15.md",
+      "x": 1280,
+      "y": 300,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC16",
+      "type": "file",
+      "file": "concepts/ACC16.md",
+      "x": 0,
+      "y": 450,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC17",
+      "type": "file",
+      "file": "concepts/ACC17.md",
+      "x": 320,
+      "y": 450,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "ACC18",
+      "type": "file",
+      "file": "concepts/ACC18.md",
+      "x": 640,
+      "y": 450,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "UN-b77af901ed70f5",
+      "type": "file",
+      "file": "concepts/UN-b77af901ed70f5.md",
+      "x": 960,
+      "y": 450,
+      "width": 280,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "EDGE-6fc2e76bb62c42",
+      "fromNode": "ACC02",
+      "toNode": "ACC01",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-09f644d4424133",
+      "fromNode": "ACC03",
+      "toNode": "ACC02",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-2389e502456d61",
+      "fromNode": "ACC04",
+      "toNode": "ACC02",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-7d65458a7c7031",
+      "fromNode": "ACC04",
+      "toNode": "ACC03",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-a39e3106329cad",
+      "fromNode": "ACC05",
+      "toNode": "ACC03",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-fc5d233d2caa85",
+      "fromNode": "ACC06",
+      "toNode": "ACC02",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-e5882588d7d07a",
+      "fromNode": "ACC07",
+      "toNode": "ACC06",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-f8522c44d5b9ac",
+      "fromNode": "ACC08",
+      "toNode": "ACC02",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-7a9315eb42d20b",
+      "fromNode": "ACC08",
+      "toNode": "ACC07",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-a71402ad87ce04",
+      "fromNode": "ACC09",
+      "toNode": "ACC08",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-51f252a58636b4",
+      "fromNode": "ACC10",
+      "toNode": "ACC08",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-15167827746923",
+      "fromNode": "ACC11",
+      "toNode": "ACC08",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-5cef3d4c5e23f6",
+      "fromNode": "ACC12",
+      "toNode": "ACC01",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-fc000c99eb03ca",
+      "fromNode": "ACC13",
+      "toNode": "ACC02",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-2852c06609bba2",
+      "fromNode": "ACC14",
+      "toNode": "ACC13",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-d9d86ef2cd3366",
+      "fromNode": "ACC15",
+      "toNode": "ACC07",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-3c2c10124c9a31",
+      "fromNode": "ACC16",
+      "toNode": "ACC13",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-95029b4dbec336",
+      "fromNode": "ACC16",
+      "toNode": "ACC15",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-d63e4bf73f0643",
+      "fromNode": "ACC17",
+      "toNode": "ACC03",
+      "label": "先修建议"
+    },
+    {
+      "id": "EDGE-3268cbba1082a2",
+      "fromNode": "ACC18",
+      "toNode": "ACC01",
+      "label": "先修建议"
+    }
+  ]
+}

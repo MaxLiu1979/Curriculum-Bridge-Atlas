@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+*.pdf
+*.zip
+*.xlsx
+*.docx
+*.log
+playwright-report/
+test-results/
+.obsidian/workspace*.json
+.DS_Store
+Thumbs.db
